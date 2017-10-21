@@ -1,0 +1,1754 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/24/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 21 13:02:57 EDT 2017</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (800 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.visa.vdp.tns.TestVisaTravelNotificationService.testAddTravelItenary()'><b>testAddTravelItenary</b><br>Test class: com.visa.vdp.tns.TestVisaTravelNotificationService</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.tns.TestVisaTravelNotificationService.testAddTravelItenary(TestVisaTravelNotificationService.java:60)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace802600647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace802600647'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.tns.TestVisaTravelNotificationService.testAddTravelItenary(TestVisaTravelNotificationService.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.tns.TestVisaTravelNotificationService@5594a1b5</td></tr>
+<tr>
+<td title='com.visa.vdp.mlc.TestCardholderEnrollment.testCardEnrollment()'><b>testCardEnrollment</b><br>Test class: com.visa.vdp.mlc.TestCardholderEnrollment</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestCardholderEnrollment.testCardEnrollment(TestCardholderEnrollment.java:42)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1763344271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1763344271'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestCardholderEnrollment.testCardEnrollment(TestCardholderEnrollment.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.mlc.TestCardholderEnrollment@7c30a502</td></tr>
+<tr>
+<td title='com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation.testCardValidation()'><b>testCardValidation</b><br>Test class: com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation.testCardValidation(TestPaymentAccountValidation.java:55)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace557023567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace557023567'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation.testCardValidation(TestPaymentAccountValidation.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation@3ac3fd8b</td></tr>
+<tr>
+<td title='com.visa.vdp.foreignexchange.TestForeignExchangeRates.testForeignExchangeRates()'><b>testForeignExchangeRates</b><br>Test class: com.visa.vdp.foreignexchange.TestForeignExchangeRates</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.foreignexchange.TestForeignExchangeRates.testForeignExchangeRates(TestForeignExchangeRates.java:53)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1213349904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1213349904'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.foreignexchange.TestForeignExchangeRates.testForeignExchangeRates(TestForeignExchangeRates.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.foreignexchange.TestForeignExchangeRates@1d251891</td></tr>
+<tr>
+<td title='com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes.testFundsTransferEnquiry()'><b>testFundsTransferEnquiry</b><br>Test class: com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes.testFundsTransferEnquiry(TestFundsTransferAttributes.java:37)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace266272063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace266272063'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes.testFundsTransferEnquiry(TestFundsTransferAttributes.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes@2133c8f8</td></tr>
+<tr>
+<td title='com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry.testGeneralAttributesEnquiry()'><b>testGeneralAttributesEnquiry</b><br>Test class: com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry.testGeneralAttributesEnquiry(TestGeneralAttributesInquiry.java:33)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace299644693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace299644693'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry.testGeneralAttributesEnquiry(TestGeneralAttributesInquiry.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry@43a25848</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManageCommunities.testGetCommunities()'><b>testGetCommunities</b><br>Test class: com.visa.vdp.vta.TestManageCommunities</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCommunities.testGetCommunities(TestManageCommunities.java:32)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688726285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688726285'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCommunities.testGetCommunities(TestManageCommunities.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManageCommunities@3f3afe78</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManageCustomers.testGetCustomerDetails()'><b>testGetCustomerDetails</b><br>Test class: com.visa.vdp.vta.TestManageCustomers</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCustomers.testGetCustomerDetails(TestManageCustomers.java:156)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1344199921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1344199921'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCustomers.testGetCustomerDetails(TestManageCustomers.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManageCustomers@7f63425a</td></tr>
+<tr>
+<td title='com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo()'><b>testGetPaymentInfo</b><br>Test class: com.visa.vdp.visacheckout.TestGetPaymentData</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2013559698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2013559698'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visacheckout.TestGetPaymentData@3b6eb2ec</td></tr>
+<tr>
+<td title='com.visa.vdp.atmlocator.TestLocateATM.testLocateATM()'><b>testLocateATM</b><br>Test class: com.visa.vdp.atmlocator.TestLocateATM</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.atmlocator.TestLocateATM.testLocateATM(TestLocateATM.java:121)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1853205005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1853205005'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.atmlocator.TestLocateATM.testLocateATM(TestLocateATM.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.atmlocator.TestLocateATM@4c203ea1</td></tr>
+<tr>
+<td title='com.visa.vdp.visadirect.TestMVisa.testMVisaTransactions()'><b>testMVisaTransactions</b><br>Test class: com.visa.vdp.visadirect.TestMVisa</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestMVisa.testMVisaTransactions(TestMVisa.java:62)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace182259421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace182259421'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestMVisa.testMVisaTransactions(TestMVisa.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visadirect.TestMVisa@7a79be86</td></tr>
+<tr>
+<td title='com.visa.vdp.merchantlocator.TestMerchantLocatorAPI.testMerchantLocatorAPI()'><b>testMerchantLocatorAPI</b><br>Test class: com.visa.vdp.merchantlocator.TestMerchantLocatorAPI</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantlocator.TestMerchantLocatorAPI.testMerchantLocatorAPI(TestMerchantLocatorAPI.java:60)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1519736165", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1519736165'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantlocator.TestMerchantLocatorAPI.testMerchantLocatorAPI(TestMerchantLocatorAPI.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.merchantlocator.TestMerchantLocatorAPI@48140564</td></tr>
+<tr>
+<td title='com.visa.vdp.merchantsearch.TestMerchantSearchAPI.testMerchantSearch()'><b>testMerchantSearch</b><br>Test class: com.visa.vdp.merchantsearch.TestMerchantSearchAPI</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantsearch.TestMerchantSearchAPI.testMerchantSearch(TestMerchantSearchAPI.java:66)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2143437117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2143437117'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantsearch.TestMerchantSearchAPI.testMerchantSearch(TestMerchantSearchAPI.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.merchantsearch.TestMerchantSearchAPI@58ceff1</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManageNotifications.testNotificationSubscription()'><b>testNotificationSubscription</b><br>Test class: com.visa.vdp.vta.TestManageNotifications</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageNotifications.testNotificationSubscription(TestManageNotifications.java:48)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26728049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26728049'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageNotifications.testNotificationSubscription(TestManageNotifications.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManageNotifications@36d64342</td></tr>
+<tr>
+<td title='com.visa.vdp.cybersource.TestCybersourcePayments.testPaymentAuthorizations()'><b>testPaymentAuthorizations</b><br>Test class: com.visa.vdp.cybersource.TestCybersourcePayments</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.cybersource.TestCybersourcePayments.testPaymentAuthorizations(TestCybersourcePayments.java:44)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1405747618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1405747618'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.cybersource.TestCybersourcePayments.testPaymentAuthorizations(TestCybersourcePayments.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.cybersource.TestCybersourcePayments@27f674d</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManagePortfolios.testPortfolios()'><b>testPortfolios</b><br>Test class: com.visa.vdp.vta.TestManagePortfolios</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManagePortfolios.testPortfolios(TestManagePortfolios.java:32)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace576936864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576936864'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManagePortfolios.testPortfolios(TestManagePortfolios.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManagePortfolios@39ba5a14</td></tr>
+<tr>
+<td title='com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions()'><b>testPushFundsTransactions</b><br>Test class: com.visa.vdp.visadirect.TestFundsTransfer</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:67)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1616974404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1616974404'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visadirect.TestFundsTransfer@6e8dacdf</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestConsumerRules.testRegisterACard()'><b>testRegisterACard</b><br>Test class: com.visa.vdp.vctc.TestConsumerRules</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:36)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1077199500", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1077199500'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestConsumerRules@6a5fc7f7</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestReplaceCard.testReplaceCards()'><b>testReplaceCards</b><br>Test class: com.visa.vdp.vta.TestReplaceCard</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestReplaceCard.testReplaceCards(TestReplaceCard.java:77)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace112302969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace112302969'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestReplaceCard.testReplaceCards(TestReplaceCard.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestReplaceCard@511baa65</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestValidation.testRetreiveListofDecisionRecords()'><b>testRetreiveListofDecisionRecords</b><br>Test class: com.visa.vdp.vctc.TestValidation</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestValidation.testRetreiveListofDecisionRecords(TestValidation.java:28)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1340565491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1340565491'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestValidation.testRetreiveListofDecisionRecords(TestValidation.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestValidation@880ec60</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestProgramAdministration.testRetreiveTransactionTypeControls()'><b>testRetreiveTransactionTypeControls</b><br>Test class: com.visa.vdp.vctc.TestProgramAdministration</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestProgramAdministration.testRetreiveTransactionTypeControls(TestProgramAdministration.java:27)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace510854293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510854293'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestProgramAdministration.testRetreiveTransactionTypeControls(TestProgramAdministration.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestProgramAdministration@b684286</td></tr>
+<tr>
+<td title='com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo()'><b>testUpdatePaymentInfo</b><br>Test class: com.visa.vdp.visacheckout.TestUpdatePaymentInformation</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.&lt;init&gt;(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1978869058", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978869058'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.&lt;init&gt;(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visacheckout.TestUpdatePaymentInformation@1e643faf</td></tr>
+<tr>
+<td title='com.visa.vdp.visadirect.TestWatchListScreening.testWatchListInquiry()'><b>testWatchListInquiry</b><br>Test class: com.visa.vdp.visadirect.TestWatchListScreening</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestWatchListScreening.testWatchListInquiry(TestWatchListScreening.java:41)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace574568002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace574568002'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestWatchListScreening.testWatchListInquiry(TestWatchListScreening.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.visadirect.TestWatchListScreening@34ce8af7</td></tr>
+<tr>
+<td title='com.visa.vdp.mlc.TestLocationUpdate.testlocations()'><b>testlocations</b><br>Test class: com.visa.vdp.mlc.TestLocationUpdate</td>
+<td><div><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:58)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1384010761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1384010761'><pre>java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:158)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:98)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</pre></div></td>
+<td>0</td>
+<td>com.visa.vdp.mlc.TestLocationUpdate@49e4cb85</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManageCommunities.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vta.TestManageCommunities</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManageCommunities@3f3afe78</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManageCustomers.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vta.TestManageCustomers</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManageCustomers@7f63425a</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManageNotifications.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vta.TestManageNotifications</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManageNotifications@36d64342</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestManagePortfolios.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vta.TestManagePortfolios</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestManagePortfolios@39ba5a14</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestProgramAdministration.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vctc.TestProgramAdministration</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestProgramAdministration@b684286</td></tr>
+<tr>
+<td title='com.visa.vdp.vta.TestReplaceCard.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vta.TestReplaceCard</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vta.TestReplaceCard@511baa65</td></tr>
+<tr>
+<td title='com.visa.vdp.vctc.TestValidation.setUp()'><b>setUp</b><br>Test class: com.visa.vdp.vctc.TestValidation</td>
+<td></td>
+<td>0</td>
+<td>com.visa.vdp.vctc.TestValidation@880ec60</td></tr>
+</table><p>
+</body>
+</html>

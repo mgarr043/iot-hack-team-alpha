@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 24 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Command_line_suite">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Command_line_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Command_line_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Command_line_suite">
+                    <span>13 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Command_line_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Command_line_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Command_line_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Command_line_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">31 methods, 24 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.tns.TestVisaTravelNotificationService" hash-for-method="testAddTravelItenary">testAddTravelItenary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.mlc.TestCardholderEnrollment" hash-for-method="testCardEnrollment">testCardEnrollment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation" hash-for-method="testCardValidation">testCardValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.foreignexchange.TestForeignExchangeRates" hash-for-method="testForeignExchangeRates">testForeignExchangeRates</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes" hash-for-method="testFundsTransferEnquiry">testFundsTransferEnquiry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry" hash-for-method="testGeneralAttributesEnquiry">testGeneralAttributesEnquiry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManageCommunities" hash-for-method="testGetCommunities">testGetCommunities</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManageCustomers" hash-for-method="testGetCustomerDetails">testGetCustomerDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.visacheckout.TestGetPaymentData" hash-for-method="testGetPaymentInfo">testGetPaymentInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.atmlocator.TestLocateATM" hash-for-method="testLocateATM">testLocateATM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.visadirect.TestMVisa" hash-for-method="testMVisaTransactions">testMVisaTransactions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.merchantlocator.TestMerchantLocatorAPI" hash-for-method="testMerchantLocatorAPI">testMerchantLocatorAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.merchantsearch.TestMerchantSearchAPI" hash-for-method="testMerchantSearch">testMerchantSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManageNotifications" hash-for-method="testNotificationSubscription">testNotificationSubscription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.cybersource.TestCybersourcePayments" hash-for-method="testPaymentAuthorizations">testPaymentAuthorizations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManagePortfolios" hash-for-method="testPortfolios">testPortfolios</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.visadirect.TestFundsTransfer" hash-for-method="testPushFundsTransactions">testPushFundsTransactions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vctc.TestConsumerRules" hash-for-method="testRegisterACard">testRegisterACard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestReplaceCard" hash-for-method="testReplaceCards">testReplaceCards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vctc.TestValidation" hash-for-method="testRetreiveListofDecisionRecords">testRetreiveListofDecisionRecords</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vctc.TestProgramAdministration" hash-for-method="testRetreiveTransactionTypeControls">testRetreiveTransactionTypeControls</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.visacheckout.TestUpdatePaymentInformation" hash-for-method="testUpdatePaymentInfo">testUpdatePaymentInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.visadirect.TestWatchListScreening" hash-for-method="testWatchListInquiry">testWatchListInquiry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.mlc.TestLocationUpdate" hash-for-method="testlocations">testlocations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManageCustomers" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManageNotifications" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManagePortfolios" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestManageCommunities" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vctc.TestProgramAdministration" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vta.TestReplaceCard" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="com.visa.vdp.vctc.TestValidation" hash-for-method="setUp">setUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.visacheckout.TestGetPaymentData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPaymentInfo">
+                  </a> <!-- testGetPaymentInfo -->
+                  <span class="method-name">testGetPaymentInfo</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManageCustomers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCustomerDetails">
+                  </a> <!-- testGetCustomerDetails -->
+                  <span class="method-name">testGetCustomerDetails</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCustomers.testGetCustomerDetails(TestManageCustomers.java:156)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.visadirect.TestMVisa</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMVisaTransactions">
+                  </a> <!-- testMVisaTransactions -->
+                  <span class="method-name">testMVisaTransactions</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestMVisa.testMVisaTransactions(TestMVisa.java:62)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.mlc.TestCardholderEnrollment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCardEnrollment">
+                  </a> <!-- testCardEnrollment -->
+                  <span class="method-name">testCardEnrollment</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestCardholderEnrollment.testCardEnrollment(TestCardholderEnrollment.java:42)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.visacheckout.TestUpdatePaymentInformation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdatePaymentInfo">
+                  </a> <!-- testUpdatePaymentInfo -->
+                  <span class="method-name">testUpdatePaymentInfo</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.&lt;init&gt;(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.atmlocator.TestLocateATM</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLocateATM">
+                  </a> <!-- testLocateATM -->
+                  <span class="method-name">testLocateATM</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.atmlocator.TestLocateATM.testLocateATM(TestLocateATM.java:121)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManageCommunities</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCommunities">
+                  </a> <!-- testGetCommunities -->
+                  <span class="method-name">testGetCommunities</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCommunities.testGetCommunities(TestManageCommunities.java:32)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.merchantsearch.TestMerchantSearchAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMerchantSearch">
+                  </a> <!-- testMerchantSearch -->
+                  <span class="method-name">testMerchantSearch</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantsearch.TestMerchantSearchAPI.testMerchantSearch(TestMerchantSearchAPI.java:66)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.tns.TestVisaTravelNotificationService</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddTravelItenary">
+                  </a> <!-- testAddTravelItenary -->
+                  <span class="method-name">testAddTravelItenary</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.tns.TestVisaTravelNotificationService.testAddTravelItenary(TestVisaTravelNotificationService.java:60)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManagePortfolios</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPortfolios">
+                  </a> <!-- testPortfolios -->
+                  <span class="method-name">testPortfolios</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManagePortfolios.testPortfolios(TestManagePortfolios.java:32)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vctc.TestValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRetreiveListofDecisionRecords">
+                  </a> <!-- testRetreiveListofDecisionRecords -->
+                  <span class="method-name">testRetreiveListofDecisionRecords</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestValidation.testRetreiveListofDecisionRecords(TestValidation.java:28)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.mlc.TestLocationUpdate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testlocations">
+                  </a> <!-- testlocations -->
+                  <span class="method-name">testlocations</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:58)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.visadirect.TestFundsTransfer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPushFundsTransactions">
+                  </a> <!-- testPushFundsTransactions -->
+                  <span class="method-name">testPushFundsTransactions</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:67)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.visadirect.TestWatchListScreening</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWatchListInquiry">
+                  </a> <!-- testWatchListInquiry -->
+                  <span class="method-name">testWatchListInquiry</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestWatchListScreening.testWatchListInquiry(TestWatchListScreening.java:41)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCardValidation">
+                  </a> <!-- testCardValidation -->
+                  <span class="method-name">testCardValidation</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation.testCardValidation(TestPaymentAccountValidation.java:55)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.cybersource.TestCybersourcePayments</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPaymentAuthorizations">
+                  </a> <!-- testPaymentAuthorizations -->
+                  <span class="method-name">testPaymentAuthorizations</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.cybersource.TestCybersourcePayments.testPaymentAuthorizations(TestCybersourcePayments.java:44)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vctc.TestConsumerRules</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterACard">
+                  </a> <!-- testRegisterACard -->
+                  <span class="method-name">testRegisterACard</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:36)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFundsTransferEnquiry">
+                  </a> <!-- testFundsTransferEnquiry -->
+                  <span class="method-name">testFundsTransferEnquiry</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes.testFundsTransferEnquiry(TestFundsTransferAttributes.java:37)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vctc.TestProgramAdministration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRetreiveTransactionTypeControls">
+                  </a> <!-- testRetreiveTransactionTypeControls -->
+                  <span class="method-name">testRetreiveTransactionTypeControls</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestProgramAdministration.testRetreiveTransactionTypeControls(TestProgramAdministration.java:27)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManageNotifications</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNotificationSubscription">
+                  </a> <!-- testNotificationSubscription -->
+                  <span class="method-name">testNotificationSubscription</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageNotifications.testNotificationSubscription(TestManageNotifications.java:48)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.foreignexchange.TestForeignExchangeRates</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForeignExchangeRates">
+                  </a> <!-- testForeignExchangeRates -->
+                  <span class="method-name">testForeignExchangeRates</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.foreignexchange.TestForeignExchangeRates.testForeignExchangeRates(TestForeignExchangeRates.java:53)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestReplaceCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testReplaceCards">
+                  </a> <!-- testReplaceCards -->
+                  <span class="method-name">testReplaceCards</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestReplaceCard.testReplaceCards(TestReplaceCard.java:77)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGeneralAttributesEnquiry">
+                  </a> <!-- testGeneralAttributesEnquiry -->
+                  <span class="method-name">testGeneralAttributesEnquiry</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry.testGeneralAttributesEnquiry(TestGeneralAttributesInquiry.java:33)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.visa.vdp.merchantlocator.TestMerchantLocatorAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMerchantLocatorAPI">
+                  </a> <!-- testMerchantLocatorAPI -->
+                  <span class="method-name">testMerchantLocatorAPI</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantlocator.TestMerchantLocatorAPI.testMerchantLocatorAPI(TestMerchantLocatorAPI.java:60)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManageCommunities</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.visa.vdp.vctc.TestProgramAdministration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManageCustomers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManagePortfolios</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.visa.vdp.vctc.TestValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestManageNotifications</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.visa.vdp.vta.TestReplaceCard</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setUp">
+                  </a> <!-- setUp -->
+                  <span class="method-name">setUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Command line suite&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.visa.vdp.atmlocator.TestLocateATM&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.cybersource.TestCybersourcePayments&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.foreignexchange.TestForeignExchangeRates&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.merchantlocator.TestMerchantLocatorAPI&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.merchantsearch.TestMerchantSearchAPI&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.mlc.TestCardholderEnrollment&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.mlc.TestLocationUpdate&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.tns.TestVisaTravelNotificationService&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vctc.TestConsumerRules&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vctc.TestProgramAdministration&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vctc.TestValidation&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.visacheckout.TestGetPaymentData&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.visacheckout.TestUpdatePaymentInformation&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.visadirect.TestFundsTransfer&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.visadirect.TestMVisa&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.visadirect.TestWatchListScreening&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vta.TestManageCommunities&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vta.TestManageCustomers&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vta.TestManageNotifications&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vta.TestManagePortfolios&quot;/&gt;
+      &lt;class name=&quot;com.visa.vdp.vta.TestReplaceCard&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (24 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">atmlocator</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testLocateATM</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">cybersource</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPaymentAuthorizations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">foreignExchange</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testForeignExchangeRates</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">merchantlocator</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMerchantLocatorAPI</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">merchantsearch</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMerchantSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">mlc</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCardEnrollment</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testlocations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">paai</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testFundsTransferEnquiry</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGeneralAttributesEnquiry</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">pav</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCardValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">tns</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddTravelItenary</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">vctc</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">setUp</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRegisterACard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRetreiveListofDecisionRecords</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testRetreiveTransactionTypeControls</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">visacheckout</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetPaymentInfo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdatePaymentInfo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">visadirect</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMVisaTransactions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPushFundsTransactions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testWatchListInquiry</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">vta</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">setUp</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetCommunities</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetCustomerDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testNotificationSubscription</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testPortfolios</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testReplaceCards</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(31);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCardEnrollment')
+data.setCell(0, 2, 'com.visa.vdp.mlc.TestCardholderEnrollment')
+data.setCell(0, 3, 316);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testFundsTransferEnquiry')
+data.setCell(1, 2, 'com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes')
+data.setCell(1, 3, 31);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testPushFundsTransactions')
+data.setCell(2, 2, 'com.visa.vdp.visadirect.TestFundsTransfer')
+data.setCell(2, 3, 31);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testMVisaTransactions')
+data.setCell(3, 2, 'com.visa.vdp.visadirect.TestMVisa')
+data.setCell(3, 3, 16);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testForeignExchangeRates')
+data.setCell(4, 2, 'com.visa.vdp.foreignexchange.TestForeignExchangeRates')
+data.setCell(4, 3, 16);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testRetreiveListofDecisionRecords')
+data.setCell(5, 2, 'com.visa.vdp.vctc.TestValidation')
+data.setCell(5, 3, 16);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGetPaymentInfo')
+data.setCell(6, 2, 'com.visa.vdp.visacheckout.TestGetPaymentData')
+data.setCell(6, 3, 16);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGetCustomerDetails')
+data.setCell(7, 2, 'com.visa.vdp.vta.TestManageCustomers')
+data.setCell(7, 3, 16);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testMerchantLocatorAPI')
+data.setCell(8, 2, 'com.visa.vdp.merchantlocator.TestMerchantLocatorAPI')
+data.setCell(8, 3, 16);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testRegisterACard')
+data.setCell(9, 2, 'com.visa.vdp.vctc.TestConsumerRules')
+data.setCell(9, 3, 15);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLocateATM')
+data.setCell(10, 2, 'com.visa.vdp.atmlocator.TestLocateATM')
+data.setCell(10, 3, 15);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testWatchListInquiry')
+data.setCell(11, 2, 'com.visa.vdp.visadirect.TestWatchListScreening')
+data.setCell(11, 3, 12);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'setUp')
+data.setCell(12, 2, 'com.visa.vdp.vta.TestManageCustomers')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'setUp')
+data.setCell(13, 2, 'com.visa.vdp.vta.TestManageNotifications')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'setUp')
+data.setCell(14, 2, 'com.visa.vdp.vta.TestManagePortfolios')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'setUp')
+data.setCell(15, 2, 'com.visa.vdp.vta.TestManageCommunities')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'setUp')
+data.setCell(16, 2, 'com.visa.vdp.vctc.TestProgramAdministration')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'setUp')
+data.setCell(17, 2, 'com.visa.vdp.vta.TestReplaceCard')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'setUp')
+data.setCell(18, 2, 'com.visa.vdp.vctc.TestValidation')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testGetCommunities')
+data.setCell(19, 2, 'com.visa.vdp.vta.TestManageCommunities')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testPortfolios')
+data.setCell(20, 2, 'com.visa.vdp.vta.TestManagePortfolios')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testReplaceCards')
+data.setCell(21, 2, 'com.visa.vdp.vta.TestReplaceCard')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testGeneralAttributesEnquiry')
+data.setCell(22, 2, 'com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testAddTravelItenary')
+data.setCell(23, 2, 'com.visa.vdp.tns.TestVisaTravelNotificationService')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testNotificationSubscription')
+data.setCell(24, 2, 'com.visa.vdp.vta.TestManageNotifications')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testRetreiveTransactionTypeControls')
+data.setCell(25, 2, 'com.visa.vdp.vctc.TestProgramAdministration')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testPaymentAuthorizations')
+data.setCell(26, 2, 'com.visa.vdp.cybersource.TestCybersourcePayments')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testUpdatePaymentInfo')
+data.setCell(27, 2, 'com.visa.vdp.visacheckout.TestUpdatePaymentInformation')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testlocations')
+data.setCell(28, 2, 'com.visa.vdp.mlc.TestLocationUpdate')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testCardValidation')
+data.setCell(29, 2, 'com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testMerchantSearch')
+data.setCell(30, 2, 'com.visa.vdp.merchantsearch.TestMerchantSearchAPI')
+data.setCell(30, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 516 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.mlc.TestCardholderEnrollment</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vctc.TestConsumerRules</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">196 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.cybersource.TestCybersourcePayments</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.foreignexchange.TestForeignExchangeRates</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visadirect.TestFundsTransfer</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">197 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">198 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">199 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visacheckout.TestGetPaymentData</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">199 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.atmlocator.TestLocateATM</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">199 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.mlc.TestLocationUpdate</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visadirect.TestMVisa</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.merchantlocator.TestMerchantLocatorAPI</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">200 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.merchantsearch.TestMerchantSearchAPI</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visacheckout.TestUpdatePaymentInformation</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.tns.TestVisaTravelNotificationService</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visadirect.TestWatchListScreening</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">202 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.mlc.TestCardholderEnrollment</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCardEnrollment</span>
+                <span class="method-start">212 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vctc.TestConsumerRules</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegisterACard</span>
+                <span class="method-start">528 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.cybersource.TestCybersourcePayments</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testPaymentAuthorizations</span>
+                <span class="method-start">543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.foreignexchange.TestForeignExchangeRates</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testForeignExchangeRates</span>
+                <span class="method-start">543 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visadirect.TestFundsTransfer</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testPushFundsTransactions</span>
+                <span class="method-start">559 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFundsTransferEnquiry</span>
+                <span class="method-start">606 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGeneralAttributesEnquiry</span>
+                <span class="method-start">637 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visacheckout.TestGetPaymentData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetPaymentInfo</span>
+                <span class="method-start">637 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.atmlocator.TestLocateATM</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLocateATM</span>
+                <span class="method-start">653 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.mlc.TestLocationUpdate</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testlocations</span>
+                <span class="method-start">668 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visadirect.TestMVisa</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMVisaTransactions</span>
+                <span class="method-start">668 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vta.TestManageCommunities</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetCommunities</span>
+                <span class="method-start">684 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vta.TestManageCustomers</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetCustomerDetails</span>
+                <span class="method-start">699 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vta.TestManageNotifications</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testNotificationSubscription</span>
+                <span class="method-start">715 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vta.TestManagePortfolios</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testPortfolios</span>
+                <span class="method-start">715 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.merchantlocator.TestMerchantLocatorAPI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMerchantLocatorAPI</span>
+                <span class="method-start">715 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.merchantsearch.TestMerchantSearchAPI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMerchantSearch</span>
+                <span class="method-start">731 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCardValidation</span>
+                <span class="method-start">731 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vctc.TestProgramAdministration</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRetreiveTransactionTypeControls</span>
+                <span class="method-start">746 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vta.TestReplaceCard</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testReplaceCards</span>
+                <span class="method-start">762 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visacheckout.TestUpdatePaymentInformation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdatePaymentInfo</span>
+                <span class="method-start">762 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.vctc.TestValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">setUp</span>
+                <span class="method-start">762 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRetreiveListofDecisionRecords</span>
+                <span class="method-start">762 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.tns.TestVisaTravelNotificationService</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddTravelItenary</span>
+                <span class="method-start">778 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.visa.vdp.visadirect.TestWatchListScreening</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testWatchListInquiry</span>
+                <span class="method-start">778 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

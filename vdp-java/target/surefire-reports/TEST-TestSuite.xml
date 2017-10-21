@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="31" failures="24" name="TestSuite" time="3.072" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\M\Desktop\visa\vdp-java"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\M\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Xoreax\IncrediBuild;C:\Users\M\Desktop\gaminganywhere-0.8.0\deps.win32\bin\*.dll;C:\Program Files\Git\cmd;C:\Program Files\MicroStrategy\MicroStrategy Desktop\DataServices\180_77\64-bit\bin\server;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Users\M\AppData\Local\Microsoft\WindowsApps;C:\Users\M\Desktop\gaminganywhere-0.8.0\deps.win32\bin\*.dll;C:\Program Files\Nmap;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\M"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="M"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.2\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.visa.vdp.mlc.TestCardholderEnrollment" name="testCardEnrollment" time="0.33">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestCardholderEnrollment.testCardEnrollment(TestCardholderEnrollment.java:42)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}mlc/enrollment/v1/enrollments
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Card Enrollment Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;enrollmentMessageType&quot; : &quot;enroll&quot;,
+  &quot;enrollmentRequest&quot; : {
+    &quot;cardholderMobileNumber&quot; : &quot;0016504323000&quot;,
+    &quot;clientMessageID&quot; : &quot;{put your enrollments api client message id here}&quot;,
+    &quot;deviceId&quot; : &quot;{put your enrollments api device id here}&quot;,
+    &quot;issuerId&quot; : &quot;{put your enrollments api issuer id here}&quot;,
+    &quot;primaryAccountNumber&quot; : &quot;{put your enrollments api primary account number here}    &quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vctc.TestConsumerRules" name="testRegisterACard" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestConsumerRules.testRegisterACard(TestConsumerRules.java:36)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vctc/customerrules/v1/consumertransactioncontrols
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Register A Card
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;primaryAccountNumber&quot; : &quot;{put your pan number from test data under consumer rules api -&gt; register a card here}&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.cybersource.TestCybersourcePayments" name="testPaymentAuthorizations" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.cybersource.TestCybersourcePayments.testPaymentAuthorizations(TestCybersourcePayments.java:44)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}cybersource/payments/v1/authorizations?apikey={put your api key here}
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Payment Authorization Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;amount&quot; : &quot;0&quot;,
+  &quot;currency&quot; : &quot;USD&quot;,
+  &quot;payment&quot; : {
+    &quot;cardNumber&quot; : &quot;4111111111111111&quot;,
+    &quot;cardExpirationMonth&quot; : &quot;10&quot;,
+    &quot;cardExpirationYear&quot; : &quot;2020&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.foreignexchange.TestForeignExchangeRates" name="testForeignExchangeRates" time="0.016">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.foreignexchange.TestForeignExchangeRates.testForeignExchangeRates(TestForeignExchangeRates.java:53)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}forexrates/v1/foreignexchangerates
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Foreign Exchange Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;acquirerCountryCode&quot; : &quot;840&quot;,
+  &quot;acquiringBin&quot; : &quot;408999&quot;,
+  &quot;cardAcceptor&quot; : {
+    &quot;address&quot; : {
+      &quot;city&quot; : &quot;San Francisco&quot;,
+      &quot;country&quot; : &quot;USA&quot;,
+      &quot;county&quot; : &quot;San Mateo&quot;,
+      &quot;state&quot; : &quot;CA&quot;,
+      &quot;zipCode&quot; : &quot;94404&quot;
+    },
+    &quot;idCode&quot; : &quot;ABCD1234ABCD123&quot;,
+    &quot;name&quot; : &quot;ABCD&quot;,
+    &quot;terminalId&quot; : &quot;ABCD1234&quot;
+  },
+  &quot;destinationCurrencyCode&quot; : &quot;826&quot;,
+  &quot;markUpRate&quot; : &quot;1&quot;,
+  &quot;retrievalReferenceNumber&quot; : &quot;201010101031&quot;,
+  &quot;sourceAmount&quot; : &quot;100.00&quot;,
+  &quot;sourceCurrencyCode&quot; : &quot;840&quot;,
+  &quot;systemsTraceAuditNumber&quot; : &quot;350421&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.visadirect.TestFundsTransfer" name="testPushFundsTransactions" time="0.031">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestFundsTransfer.testPushFundsTransactions(TestFundsTransfer.java:67)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}visadirect/fundstransfer/v1/pushfundstransactions/
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Push Funds Transaction Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;systemsTraceAuditNumber&quot; : 350420,
+  &quot;retrievalReferenceNumber&quot; : &quot;401010350420&quot;,
+  &quot;localTransactionDateTime&quot; : &quot;2017-10-21T13:02:58&quot;,
+  &quot;acquiringBin&quot; : 409999,
+  &quot;acquirerCountryCode&quot; : &quot;101&quot;,
+  &quot;senderAccountNumber&quot; : &quot;1234567890123456&quot;,
+  &quot;senderCountryCode&quot; : &quot;USA&quot;,
+  &quot;transactionCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;senderName&quot; : &quot;John Smith&quot;,
+  &quot;senderAddress&quot; : &quot;44 Market St.&quot;,
+  &quot;senderCity&quot; : &quot;San Francisco&quot;,
+  &quot;senderStateCode&quot; : &quot;CA&quot;,
+  &quot;recipientName&quot; : &quot;Adam Smith&quot;,
+  &quot;recipientPrimaryAccountNumber&quot; : &quot;4957030420210454&quot;,
+  &quot;amount&quot; : &quot;112.00&quot;,
+  &quot;businessApplicationId&quot; : &quot;AA&quot;,
+  &quot;transactionIdentifier&quot; : 234234322342343,
+  &quot;merchantCategoryCode&quot; : 6012,
+  &quot;sourceOfFundsCode&quot; : &quot;03&quot;,
+  &quot;cardAcceptor&quot; : {
+    &quot;name&quot; : &quot;John Smith&quot;,
+    &quot;terminalId&quot; : &quot;13655392&quot;,
+    &quot;idCode&quot; : &quot;VMT200911026070&quot;,
+    &quot;address&quot; : {
+      &quot;state&quot; : &quot;CA&quot;,
+      &quot;county&quot; : &quot;081&quot;,
+      &quot;country&quot; : &quot;USA&quot;,
+      &quot;zipCode&quot; : &quot;94105&quot;
+    }
+  },
+  &quot;feeProgramIndicator&quot; : &quot;123&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes" name="testFundsTransferEnquiry" time="0.031">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestFundsTransferAttributes.testFundsTransferEnquiry(TestFundsTransferAttributes.java:37)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}paai/fundstransferattinq/v1/cardattributes/fundstransferinquiry
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Funds Transfer Enquiry
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;acquirerCountryCode&quot; : &quot;840&quot;,
+  &quot;acquiringBin&quot; : &quot;408999&quot;,
+  &quot;primaryAccountNumber&quot; : &quot;4957030420210512&quot;,
+  &quot;retrievalReferenceNumber&quot; : &quot;330000550000&quot;,
+  &quot;systemsTraceAuditNumber&quot; : &quot;451006&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry" name="testGeneralAttributesEnquiry" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntattrinqry.TestGeneralAttributesInquiry.testGeneralAttributesEnquiry(TestGeneralAttributesInquiry.java:33)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}paai/generalattinq/v1/cardattributes/generalinquiry
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - General Attributes Enquiry
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;primaryAccountNumber&quot; : &quot;4465390000029077&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.visacheckout.TestGetPaymentData" name="testGetPaymentInfo" time="0.016">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestGetPaymentData.testGetPaymentInfo(TestGetPaymentData.java:34)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}wallet-services-web/payment/data/{put your visa checkout callId here}?apikey={put your api key here}
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Get Payment Information Test
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.atmlocator.TestLocateATM" name="testLocateATM" time="0.015">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.atmlocator.TestLocateATM.testLocateATM(TestLocateATM.java:121)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}globalatmlocator/v1/localatms/atmsinquiry
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Locate ATM Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;requestData&quot; : {
+    &quot;culture&quot; : &quot;en-US&quot;,
+    &quot;distance&quot; : &quot;20&quot;,
+    &quot;distanceUnit&quot; : &quot;mi&quot;,
+    &quot;location&quot; : {
+      &quot;address&quot; : null,
+      &quot;geocodes&quot; : null,
+      &quot;placeName&quot; : &quot;800 metro center , foster city,ca&quot;
+    },
+    &quot;metaDataOptions&quot; : 0,
+    &quot;options&quot; : {
+      &quot;findFilters&quot; : [ {
+        &quot;filterName&quot; : &quot;PLACE_NAME&quot;,
+        &quot;filterValue&quot; : &quot;FORT FINANCIAL CREDIT UNION|ULTRON INC|U.S. BANK&quot;
+      }, {
+        &quot;filterName&quot; : &quot;OPER_HRS&quot;,
+        &quot;filterValue&quot; : &quot;C&quot;
+      }, {
+        &quot;filterName&quot; : &quot;AIRPORT_CD&quot;,
+        &quot;filterValue&quot; : &quot;&quot;
+      }, {
+        &quot;filterName&quot; : &quot;WHEELCHAIR&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;BRAILLE_AUDIO&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;BALANCE_INQUIRY&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;CHIP_CAPABLE&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;PIN_CHANGE&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;RESTRICTED&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;PLUS_ALLIANCE_NO_SURCHARGE_FEE&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;ACCEPTS_PLUS_SHARED_DEPOSIT&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;V_PAY_CAPABLE&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      }, {
+        &quot;filterName&quot; : &quot;READY_LINK&quot;,
+        &quot;filterValue&quot; : &quot;N&quot;
+      } ],
+      &quot;operationName&quot; : &quot;or&quot;,
+      &quot;range&quot; : {
+        &quot;count&quot; : 99,
+        &quot;start&quot; : 0
+      },
+      &quot;sort&quot; : {
+        &quot;direction&quot; : &quot;desc&quot;,
+        &quot;primary&quot; : &quot;city&quot;
+      },
+      &quot;useFirstAmbiguous&quot; : true
+    }
+  },
+  &quot;wsRequestHeaderV2&quot; : {
+    &quot;applicationId&quot; : &quot;VATMLOC&quot;,
+    &quot;correlationId&quot; : &quot;909420141104053819418&quot;,
+    &quot;requestMessageId&quot; : &quot;test12345678&quot;,
+    &quot;requestTs&quot; : &quot;2017-10-21T13:02:58.190Z&quot;,
+    &quot;userBid&quot; : &quot;10000108&quot;,
+    &quot;userId&quot; : &quot;CDISIUserID&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.mlc.TestLocationUpdate" name="testlocations" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.mlc.TestLocationUpdate.testlocations(TestLocationUpdate.java:58)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}mlc/locationupdate/v1/locations
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}mlc/locationupdate/v1/locations
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Locations Update Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;accuracy&quot; : &quot;5000&quot;,
+  &quot;cloudNotificationKey&quot; : &quot;03e3ae03-a627-4241-bad6-58f811c18e46&quot;,
+  &quot;cloudNotificationProvider&quot; : &quot;1&quot;,
+  &quot;deviceId&quot; : &quot;{put your enrollments api device id here}&quot;,
+  &quot;deviceLocationDateTime&quot; : &quot;2017-10-21T17:02:58.191Z&quot;,
+  &quot;geoLocationCoordinate&quot; : {
+    &quot;latitude&quot; : &quot;37.558546&quot;,
+    &quot;longitude&quot; : &quot;-122.271079&quot;
+  },
+  &quot;header&quot; : {
+    &quot;messageDateTime&quot; : &quot;2017-10-21T17:02:58.191Z&quot;,
+    &quot;messageId&quot; : &quot;{put your locations api message id here}&quot;
+  },
+  &quot;issuerId&quot; : &quot;{put your enrollments api issuer id here}&quot;,
+  &quot;provider&quot; : &quot;1&quot;,
+  &quot;source&quot; : &quot;2&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.visadirect.TestMVisa" name="testMVisaTransactions" time="0.016">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestMVisa.testMVisaTransactions(TestMVisa.java:62)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}visadirect/mvisa/v1/cashinpushpayments
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - M Visa Transaction Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;acquirerCountryCode&quot; : &quot;643&quot;,
+  &quot;acquiringBin&quot; : &quot;400171&quot;,
+  &quot;amount&quot; : &quot;124.05&quot;,
+  &quot;businessApplicationId&quot; : &quot;CI&quot;,
+  &quot;cardAcceptor&quot; : {
+    &quot;address&quot; : {
+      &quot;city&quot; : &quot;Bangalore&quot;,
+      &quot;country&quot; : &quot;IND&quot;
+    },
+    &quot;idCode&quot; : &quot;ID-Code123&quot;,
+    &quot;name&quot; : &quot;Card Accpector ABC&quot;
+  },
+  &quot;localTransactionDateTime&quot; : &quot;2017-10-21T17:02:58&quot;,
+  &quot;merchantCategoryCode&quot; : &quot;4829&quot;,
+  &quot;recipientPrimaryAccountNumber&quot; : &quot;4123640062698797&quot;,
+  &quot;retrievalReferenceNumber&quot; : &quot;430000367618&quot;,
+  &quot;senderAccountNumber&quot; : &quot;4541237895236&quot;,
+  &quot;senderName&quot; : &quot;Mohammed Qasim&quot;,
+  &quot;senderReference&quot; : &quot;1234&quot;,
+  &quot;systemsTraceAuditNumber&quot; : &quot;313042&quot;,
+  &quot;transactionCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;transactionIdentifier&quot; : &quot;381228649430015&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vta.TestManageCommunities" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vta.TestManageCommunities" name="testGetCommunities" time="0.015">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCommunities.testGetCommunities(TestManageCommunities.java:32)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vta/v3/communities
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Get Communities Test
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vta.TestManageCustomers" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vta.TestManageCustomers" name="testGetCustomerDetails" time="0.016">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageCustomers.testGetCustomerDetails(TestManageCustomers.java:156)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/customers
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Create Customer Test
+2017-10-21 13:02:58 ERROR VisaAPIClient:205 - Unexpected character (&apos;p&apos; (code 112)): was expecting double-quote to start field name
+ at [Source: {&quot;customer&quot;: {&quot;cards&quot;: [{&quot;address&quot;:{put your adress from the create customer call here},&quot;billCycleDay&quot;: &quot;7&quot;,&quot;bin&quot;: 431263,&quot;cardEnrollmentDate&quot;: &quot;2017-10-21T17:02:58.690Z&quot;,&quot;cardExpiryDate&quot;: &quot;{put your vta create customer card expiry date here}&quot;,&quot;cardNickName&quot;: &quot;My Card&quot;,&quot;cardNumber&quot;: &quot;{put your vta create customer card number here}&quot;,&quot;cardSecurityCode&quot;: &quot;{put your vta create customer card security code here}&quot;,&quot;contactServiceOfferings&quot;: [{&quot;contact&quot;: {&quot;contactNickName&quot;: &quot;testEmail&quot;,&quot;contactType&quot;: &quot;Email&quot;,&quot;contactValue&quot;: &quot;john@visa.com&quot;,&quot;isVerified&quot;: true,&quot;lastUpdateDateTime&quot;: &quot;2017-10-21T17:02:58.690Z&quot;,&quot;mobileCountryCode&quot;: null,&quot;mobileVerificationCode&quot;: null,&quot;mobileVerificationCodeDate&quot;: &quot;2017-10-21T17:02:58.690Z&quot;,&quot;platform&quot;: &quot;None&quot;,&quot;preferredEmailFormat&quot;: &quot;Html&quot;,&quot;securityPhrase&quot;: null,&quot;status&quot;: &quot;Active&quot;},&quot;serviceOfferings&quot;: [{&quot;isActive&quot;: true,&quot;offeringId&quot;: &quot;Threshold&quot;,&quot;offeringProperties&quot;: [{&quot;key&quot;: &quot;ThresholdAmount&quot;,&quot;value&quot;: &quot;10&quot;}]},{&quot;isActive&quot;: true,&quot;offeringId&quot;: &quot;CrossBorder&quot;,&quot;offeringProperties&quot;: [{&quot;key&quot;: &quot;ThresholdAmount&quot;,&quot;value&quot;: &quot;10&quot;}]},{&quot;isActive&quot;: true,&quot;offeringId&quot;: &quot;Declined&quot;,&quot;offeringProperties&quot;: [{&quot;key&quot;: &quot;ThresholdAmount&quot;,&quot;value&quot;: &quot;10&quot;}]},{&quot;isActive&quot;: true,&quot;offeringId&quot;: &quot;CardNotPresent&quot;,&quot;offeringProperties&quot;: [{&quot;key&quot;: &quot;ThresholdAmount&quot;,&quot;value&quot;: &quot;10&quot;}]}]}],&quot;isActive&quot;: true,&quot;lastFour&quot;: &quot;{put your vta create customer last four here}&quot;,&quot;nameOnCard&quot;: &quot;Migration&quot;,&quot;paused&quot;: false,&quot;portfolioNum&quot;: &quot;{put your portfolio number here}&quot;,&quot;previousCardNumber&quot;: null,&quot;productId&quot;: null,&quot;productIdDescription&quot;: &quot;Credit&quot;,&quot;productType&quot;: &quot;Credit&quot;,&quot;productTypeExtendedCode&quot;: &quot;Credit&quot;,&quot;rpin&quot;: null}],&quot;communityCode&quot;: &quot;{put your vta community code here}&quot;,&quot;contacts&quot;: [{&quot;contactNickName&quot;: &quot;testEmail&quot;,&quot;contactType&quot;: &quot;Email&quot;,&quot;contactValue&quot;: &quot;john@visa.com&quot;,&quot;isVerified&quot;: true,&quot;lastUpdateDateTime&quot;: &quot;2017-10-21T17:02:58.690Z&quot;,&quot;mobileCountryCode&quot;: null,&quot;mobileVerificationCode&quot;: null,&quot;mobileVerificationCodeDate&quot;: &quot;2017-10-21T17:02:58.690Z&quot;,&quot;platform&quot;: &quot;None&quot;,&quot;preferredEmailFormat&quot;: &quot;Html&quot;,&quot;securityPhrase&quot;: null,&quot;status&quot;: &quot;Active&quot;}],&quot;customerEnrollmentDate&quot;: &quot;2017-10-21T17:02:58.690Z&quot;,&quot;customerId&quot;: &quot;a1bb6fe1-ea64-4269-b29d-169aebd8780a&quot;,&quot;firstName&quot;: &quot;James&quot;,&quot;isActive&quot;: {put your vta create customer isActive here},&quot;lastName&quot;: &quot;Bond&quot;,&quot;preferredCountryCode&quot;: &quot;{put your vta create customer prefered  country code here}&quot;,&quot;preferredCurrencyCode&quot;: &quot;{put your vta create customer prefered  currency code here}&quot;,&quot;preferredFuelAmount&quot;: &quot;75&quot;,&quot;preferredLanguage&quot;: &quot;{put your vta create customer prefered  language here}&quot;,&quot;preferredTimeZone&quot;: &quot;{put your vta create customer prefered  time zone here}&quot;,&quot;preferredTipPercentage&quot;: &quot;15&quot;}}; line: 1, column: 38]
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vta.TestManageNotifications" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vta.TestManageNotifications" name="testNotificationSubscription" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManageNotifications.testNotificationSubscription(TestManageNotifications.java:48)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios/{put your portfolio number here}/customers/{put your vta customer id here}/notifications
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Notification Subscriptions Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;contactType&quot; : &quot;{put your vta notification contact type here}&quot;,
+  &quot;contactValue&quot; : &quot;john@visa.com&quot;,
+  &quot;emailFormat&quot; : &quot;None&quot;,
+  &quot;last4&quot; : &quot;{put your vta create customer last four here}&quot;,
+  &quot;phoneCountryCode&quot; : &quot;en-us&quot;,
+  &quot;platform&quot; : &quot;None&quot;,
+  &quot;preferredLanguageCode&quot; : &quot;{put your vta notification preferred language here}&quot;,
+  &quot;serviceOffering&quot; : &quot;WelcomeMessage&quot;,
+  &quot;serviceOfferingSubType&quot; : &quot;WelcomeMessage&quot;,
+  &quot;substitutions&quot; : { }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vta.TestManagePortfolios" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vta.TestManagePortfolios" name="testPortfolios" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestManagePortfolios.testPortfolios(TestManagePortfolios.java:32)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/portfolios
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Get Portfolio Details Test
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.merchantlocator.TestMerchantLocatorAPI" name="testMerchantLocatorAPI" time="0.016">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantlocator.TestMerchantLocatorAPI.testMerchantLocatorAPI(TestMerchantLocatorAPI.java:60)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantlocator/v1/locator
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}merchantlocator/v1/locator
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Merchant Locator Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;header&quot; : {
+    &quot;messageDateTime&quot; : &quot;2017-10-21T17:02:58.192&quot;,
+    &quot;requestMessageId&quot; : &quot;VCO_GMR_001&quot;
+  },
+  &quot;searchAttrList&quot; : {
+    &quot;merchantName&quot; : &quot;ALOHA CAFE&quot;,
+    &quot;merchantCountryCode&quot; : &quot;840&quot;,
+    &quot;latitude&quot; : &quot;34.047616&quot;,
+    &quot;longitude&quot; : &quot;-118.239079&quot;,
+    &quot;distance&quot; : &quot;100&quot;,
+    &quot;distanceUnit&quot; : &quot;M&quot;
+  },
+  &quot;responseAttrList&quot; : [ &quot;GNLOCATOR&quot; ],
+  &quot;searchOptions&quot; : {
+    &quot;maxRecords&quot; : &quot;2&quot;,
+    &quot;matchIndicators&quot; : &quot;true&quot;,
+    &quot;matchScore&quot; : &quot;true&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.merchantsearch.TestMerchantSearchAPI" name="testMerchantSearch" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.merchantsearch.TestMerchantSearchAPI.testMerchantSearch(TestMerchantSearchAPI.java:66)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}merchantsearch/v1/search
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}merchantsearch/v1/search
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Merchant Search API Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;header&quot; : {
+    &quot;messageDateTime&quot; : &quot;2017-10-21T17:02:58.192&quot;,
+    &quot;requestMessageId&quot; : &quot;CDISI_GMR_001&quot;,
+    &quot;startIndex&quot; : &quot;1&quot;
+  },
+  &quot;searchAttrList&quot; : {
+    &quot;merchantName&quot; : &quot;ALOHA CAFE&quot;,
+    &quot;merchantStreetAddress&quot; : &quot;410 E 2ND ST&quot;,
+    &quot;merchantCity&quot; : &quot;LOS ANGELES&quot;,
+    &quot;merchantState&quot; : &quot;CA&quot;,
+    &quot;merchantPostalCode&quot; : &quot;90012&quot;,
+    &quot;merchantCountryCode&quot; : &quot;840&quot;,
+    &quot;visaMerchantId&quot; : &quot;11687107&quot;,
+    &quot;visaStoreId&quot; : &quot;125861096&quot;,
+    &quot;businessRegistrationId&quot; : &quot;196007747&quot;,
+    &quot;acquirerCardAcceptorId&quot; : &quot;191642760469222&quot;,
+    &quot;acquiringBin&quot; : &quot;486168&quot;
+  },
+  &quot;responseAttrList&quot; : [ &quot;GNSTANDARD&quot; ],
+  &quot;searchOptions&quot; : {
+    &quot;maxRecords&quot; : &quot;2&quot;,
+    &quot;matchIndicators&quot; : &quot;true&quot;,
+    &quot;matchScore&quot; : &quot;true&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation" name="testCardValidation" time="0.015">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.pymntacntvalidation.TestPaymentAccountValidation.testCardValidation(TestPaymentAccountValidation.java:55)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}pav/v1/cardvalidation
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}pav/v1/cardvalidation
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Card Validation Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;acquirerCountryCode&quot; : &quot;840&quot;,
+  &quot;acquiringBin&quot; : &quot;408999&quot;,
+  &quot;addressVerificationResults&quot; : {
+    &quot;postalCode&quot; : &quot;T4B 3G5&quot;,
+    &quot;street&quot; : &quot;801 Metro Center Blv&quot;
+  },
+  &quot;cardAcceptor&quot; : {
+    &quot;address&quot; : {
+      &quot;city&quot; : &quot;San Francisco&quot;,
+      &quot;country&quot; : &quot;USA&quot;,
+      &quot;county&quot; : &quot;CA&quot;,
+      &quot;state&quot; : &quot;CA&quot;,
+      &quot;zipCode&quot; : &quot;94404&quot;
+    },
+    &quot;idCode&quot; : &quot;111111&quot;,
+    &quot;name&quot; : &quot;rohan&quot;,
+    &quot;terminalId&quot; : &quot;123&quot;
+  },
+  &quot;cardCvv2Value&quot; : &quot;672&quot;,
+  &quot;cardExpiryDate&quot; : &quot;2018-06&quot;,
+  &quot;primaryAccountNumber&quot; : &quot;4957030000313108&quot;,
+  &quot;retrievalReferenceNumber&quot; : &quot;015221743720&quot;,
+  &quot;systemsTraceAuditNumber&quot; : &quot;743720&quot;
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vctc.TestProgramAdministration" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vctc.TestProgramAdministration" name="testRetreiveTransactionTypeControls" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestProgramAdministration.testRetreiveTransactionTypeControls(TestProgramAdministration.java:27)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vctc/programadmin/v1/configuration/transactiontypecontrols
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Retrieve Transaction Type Controls
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vta.TestReplaceCard" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vta.TestReplaceCard" name="testReplaceCards" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vta.TestReplaceCard.testReplaceCards(TestReplaceCard.java:77)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vta/v3/communities/{put your vta community code here}/cards
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Replace a card test
+2017-10-21 13:02:58 ERROR VisaAPIClient:205 - Unexpected character (&apos;p&apos; (code 112)): was expecting double-quote to start field name
+ at [Source: {&quot;communityCode&quot;: &quot;{put your vta community code here}&quot;,&quot;newCard&quot;: {&quot;address&quot;:{put your vta replace card address here},&quot;billCycleDay&quot;: &quot;22&quot;,&quot;bin&quot;: null,&quot;cardEnrollmentDate&quot;: &quot;2016-06-10T08:36:59+00:00&quot;,&quot;cardExpiryDate&quot;: &quot;{put your vta replace card expiry date here}&quot;,&quot;cardNickName&quot;: &quot;My Visa 3&quot;,&quot;cardNumber&quot;: &quot;{put your vta replace card number here}&quot;,&quot;cardSecurityCode&quot;: &quot;{put your vta replace card security code here}&quot;,&quot;isActive&quot;: true,&quot;lastFour&quot;: &quot;{put your vta replace card last 4 digits here}&quot;,&quot;nameOnCard&quot;: &quot;Mradul&quot;,&quot;paused&quot;: false,&quot;portfolioNum&quot;: &quot;{put your portfolio number here}&quot;,&quot;previousCardNumber&quot;: null,&quot;productId&quot;: null,&quot;productIdDescription&quot;: &quot;Credit&quot;,&quot;productType&quot;: &quot;Credit&quot;,&quot;productTypeExtendedCode&quot;: &quot;123&quot;,&quot;rpin&quot;: null},&quot;oldCard&quot;: {&quot;address&quot;:{put your adress from the create customer call here},&quot;billCycleDay&quot;: &quot;22&quot;,&quot;bin&quot;: null,&quot;cardEnrollmentDate&quot;: &quot;2016-06-10T08:36:59+00:00&quot;,&quot;cardExpiryDate&quot;: &quot;{put your vta create customer card expiry date here}&quot;,&quot;cardNickName&quot;: &quot;My Visa 3&quot;,&quot;cardNumber&quot;: &quot;{put your vta create customer card number here}&quot;,&quot;cardSecurityCode&quot;: &quot;{put your vta create customer card security code here}&quot;,&quot;isActive&quot;: true,&quot;lastFour&quot;: &quot;{put your vta create customer last four here}&quot;,&quot;nameOnCard&quot;: &quot;ddd&quot;,&quot;paused&quot;: false,&quot;portfolioNum&quot;: &quot;{put your portfolio number here}&quot;,&quot;previousCardNumber&quot;: null,&quot;productId&quot;: null,&quot;productIdDescription&quot;: &quot;Credit&quot;,&quot;productType&quot;: &quot;Credit&quot;,&quot;productTypeExtendedCode&quot;: &quot;123&quot;,&quot;rpin&quot;: null}}; line: 1, column: 80]
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.visacheckout.TestUpdatePaymentInformation" name="testUpdatePaymentInfo" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPut.&lt;init&gt;(HttpPut.java:68)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:88)
+	at com.visa.vdp.utils.VisaAPIClient.doXPayTokenRequest(VisaAPIClient.java:135)
+	at com.visa.vdp.visacheckout.TestUpdatePaymentInformation.testUpdatePaymentInfo(TestUpdatePaymentInformation.java:51)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}wallet-services-web/payment/info/{put your visa checkout callId here}?apikey={put your api key here}
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Update Payment Information Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;orderInfo&quot; : {
+    &quot;currencyCode&quot; : &quot;USD&quot;,
+    &quot;discount&quot; : &quot;5.25&quot;,
+    &quot;eventType&quot; : &quot;Confirm&quot;,
+    &quot;giftWrap&quot; : &quot;10.1&quot;,
+    &quot;misc&quot; : &quot;3.2&quot;,
+    &quot;orderId&quot; : &quot;testorderID&quot;,
+    &quot;promoCode&quot; : &quot;testPromoCode&quot;,
+    &quot;reason&quot; : &quot;Order Successfully Created&quot;,
+    &quot;shippingHandling&quot; : &quot;5.1&quot;,
+    &quot;subtotal&quot; : &quot;80.1&quot;,
+    &quot;tax&quot; : &quot;7.1&quot;,
+    &quot;total&quot; : &quot;101&quot;
+  }
+}
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.vctc.TestValidation" name="setUp" time="0"/>
+  <testcase classname="com.visa.vdp.vctc.TestValidation" name="testRetreiveListofDecisionRecords" time="0.016">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:82)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.vctc.TestValidation.testRetreiveListofDecisionRecords(TestValidation.java:28)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}vctc/validation/v1/decisions/history?limit=1&amp;page=1
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Retrieve List of Recent Decision Records
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.tns.TestVisaTravelNotificationService" name="testAddTravelItenary" time="0">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.tns.TestVisaTravelNotificationService.testAddTravelItenary(TestVisaTravelNotificationService.java:60)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}travelnotificationservice/v1/travelnotification/itinerary
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Add Travel Itenary Test
+2017-10-21 13:02:58 ERROR VisaAPIClient:205 - Unexpected character (&apos;p&apos; (code 112)): was expecting double-quote to start field name
+ at [Source: {&quot;addTravelItinerary&quot;: {&quot;returnDate&quot;: &quot;2017-10-28&quot;,&quot;departureDate&quot;: &quot;2017-10-21&quot;,&quot;destinations&quot;: [{&quot;state&quot;: &quot;CA&quot;,&quot;country&quot;: &quot;840&quot;}],&quot;primaryAccountNumbers&quot;: {put your visa travel notification service card account numbers here},&quot;userId&quot;: &quot;Rajesh&quot;,&quot;partnerBid&quot;: &quot;{put your visa travel notification service partner bid here}&quot;}}; line: 1, column: 160]
+</system-out>
+  </testcase>
+  <testcase classname="com.visa.vdp.visadirect.TestWatchListScreening" name="testWatchListInquiry" time="0.014">
+    <failure message="Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI.create(URI.java:852)
+	at org.apache.http.client.methods.HttpPost.&lt;init&gt;(HttpPost.java:76)
+	at com.visa.vdp.utils.VisaAPIClient.createHttpRequest(VisaAPIClient.java:85)
+	at com.visa.vdp.utils.VisaAPIClient.doMutualAuthRequest(VisaAPIClient.java:104)
+	at com.visa.vdp.visadirect.TestWatchListScreening.testWatchListInquiry(TestWatchListScreening.java:41)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3063)
+	at java.net.URI.&lt;init&gt;(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 38 more
+</failure>
+    <system-out>2017-10-21 13:02:58 INFO  VisaAPIClient:198 - URI: {put your visa endpoint here}visadirect/watchlistscreening/v1/watchlistinquiry
+2017-10-21 13:02:58 INFO  VisaAPIClient:199 - Watch List Inquiry Test
+2017-10-21 13:02:58 INFO  VisaAPIClient:203 - RequestBody: {
+  &quot;acquirerCountryCode&quot; : &quot;840&quot;,
+  &quot;acquiringBin&quot; : &quot;408999&quot;,
+  &quot;address&quot; : {
+    &quot;city&quot; : &quot;Bangalore&quot;,
+    &quot;cardIssuerCountryCode&quot; : &quot;IND&quot;
+  },
+  &quot;referenceNumber&quot; : &quot;430000367618&quot;,
+  &quot;name&quot; : &quot;Mohammed Qasim&quot;
+}
+</system-out>
+  </testcase>
+</testsuite>
